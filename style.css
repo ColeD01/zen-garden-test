@@ -125,7 +125,6 @@ p {
   padding-top: 2;
 }
 
-/* intro block links -- download HTML/CSS */
 .intro a,
 .intro a:visited {
   position: relative;
@@ -164,7 +163,8 @@ p {
   font-size: 16px;
   text-indent: 0;
 
-  /* icomoon.io defaults */
+ /*!Look into the .WOFF in more detail!*/
+
   font-family: "verdemoderna";
   font-weight: normal;
   font-variant: normal;
@@ -180,7 +180,6 @@ p {
   background: #357d93;
 }
 
-/* coloured cutoff */
 div.participation,
 div.benefits {
   background-attachment: scroll, scroll, fixed;
@@ -190,7 +189,6 @@ div.benefits {
   background-repeat: repeat, repeat, no-repeat;
   background-size: auto, auto, cover;
 }
-/* extra padding at the cutoffs */
 div.participation {
   padding: 3em 0;
   margin-top: 3em;
@@ -208,7 +206,8 @@ div.benefits p {
   margin-bottom: 0;
 }
 
-/* sidebar base styles */
+/**side bar**/
+
 .sidebar {
   background: #edf4f0;
 }
@@ -229,8 +228,7 @@ div.benefits p {
   list-style: none;
   overflow: hidden;
 }
-
-/* shared sidebar styling */
+/**Design selection**/
 .design-selection ul,
 .zen-resources ul {
   margin: 0;
@@ -282,7 +280,6 @@ li.viewall a {
   text-transform: uppercase;
 }
 
-/* select a design */
 .design-selection h3 {
   display: none;
 }
@@ -292,7 +289,6 @@ li.viewall a {
   font-style: normal;
 }
 
-/* archives navigation */
 .design-archives {
   position: absolute;
   top: 160px;
@@ -365,7 +361,6 @@ li.viewall a {
   text-indent: 0;
   font-size: 44px;
 
-  /* icomoon.io defaults */
   font-family: "verdemoderna";
   font-weight: normal;
   font-variant: normal;
@@ -445,7 +440,7 @@ li.viewall a {
   color: rgba(255, 255, 255, 0.7);
   font-style: normal;
 }
-
+/**Footer**/
 footer {
   clear: both;
   padding: 3em 10%;
@@ -525,16 +520,16 @@ footer a.zen-github:focus::before {
   content: "G";
 }
 
+/**Media Queries**/
 @media only screen and (max-width: 600px) {
   
   .summary p:last-child {
     display: none;
   }
 
-  /* type adjustments */
   h1 {
     margin-top: 30px;
-    font-size: 2.5em;
+    font-size: x-large;
   }
   h1::before {
     width: 50px;
@@ -545,7 +540,7 @@ footer a.zen-github:focus::before {
   }
 
   .requirements p:last-child {
-    padding: 1em 6%;
+    padding: 1 6%;
   }
 }
 
@@ -574,7 +569,7 @@ footer a.zen-github:focus::before {
   }
   .design-selection li,
   .zen-resources li {
-    padding: 1em 5%;
+    padding: 1px 5%;
   }
 
   footer a {
@@ -585,10 +580,10 @@ footer a.zen-github:focus::before {
 @media only screen and (max-width: 320px) {
   /* adjusting the site header type size */
   h1 {
-    font-size: 2em;
+    font-size: large;
   }
   h2 {
-    font-size: 1.3em;
+    font-size: medium;
   }
 
   .design-selection li,
@@ -598,19 +593,19 @@ footer a.zen-github:focus::before {
   }
 
   .requirements p:last-child {
-    font-size: 1.4em;
+    font-size: medium;
   }
   footer {
-    padding: 2em 5%;
+    padding: 2px 5%;
   }
   footer a {
     width: 35px;
     height: 35px;
     padding: 35px 0 0 0;
-    margin: 0 0.5em;
+    margin: 0 0.5px;
   }
   footer a::before {
-    font-size: 32px;
+    font-size: medium;
   }
 }
 
@@ -620,7 +615,7 @@ footer a.zen-github:focus::before {
   }
   p,
   li {
-    font-size: 1.2em;
+    font-size :medium;
   }
 }
 
@@ -640,56 +635,24 @@ footer a.zen-github:focus::before {
     margin: 0 2em;
   }
   footer a::before {
-    font-size: 48px;
+    font-size: 45px;
   }
 }
 
 @media only screen and (min-width: 1132px) {
   body {
     background: #ffffff;
-    background: -moz-linear-gradient(
+    background: linear-gradient(
       left,
       #ffffff 0%,
       #ffffff 66%,
       #e5ede8 66%,
       #e5ede8 100%
     );
-    background: -webkit-gradient(
+    background: gradient(
       linear,
       left top,
       right top,
-      color-stop(0%, #ffffff),
-      color-stop(66%, #ffffff),
-      color-stop(66%, #e5ede8),
-      color-stop(100%, #e5ede8)
-    );
-    background: -webkit-linear-gradient(
-      left,
-      #ffffff 0%,
-      #ffffff 66%,
-      #e5ede8 66%,
-      #e5ede8 100%
-    );
-    background: -o-linear-gradient(
-      left,
-      #ffffff 0%,
-      #ffffff 66%,
-      #e5ede8 66%,
-      #e5ede8 100%
-    );
-    background: -ms-linear-gradient(
-      left,
-      #ffffff 0%,
-      #ffffff 66%,
-      #e5ede8 66%,
-      #e5ede8 100%
-    );
-    background: linear-gradient(
-      to right,
-      #ffffff 0%,
-      #ffffff 66%,
-      #e5ede8 66%,
-      #e5ede8 100%
     );
     font-size: 100%;
   }
@@ -748,7 +711,6 @@ footer a.zen-github:focus::before {
     font-size: 1em;
   }
 
-  /* main layout blocks */
   nav,
   .supporting {
     display: inline;
@@ -780,7 +742,6 @@ footer a.zen-github:focus::before {
     padding-bottom: 0;
   }
 
-  /* coloured cutoff */
   div.participation,
   div.benefits {
     width: 100%;
@@ -816,7 +777,6 @@ footer a.zen-github:focus::before {
     box-shadow: inset 0 0 100px rgba(255, 255, 255, 0.3);
   }
 
-  /* sidebar styling */
   .design-selection,
   .zen-resources {
     position: absolute;
@@ -836,7 +796,6 @@ footer a.zen-github:focus::before {
     margin: 0 29.4% 0 14.7%; /* 0 10% 0 5% of total width */
   }
 
-  /* select a design */
   .design-selection li:first-child {
     border-top: 0;
   }
@@ -845,7 +804,6 @@ footer a.zen-github:focus::before {
     background: none;
   }
 
-  /* archives navigation */
   .design-archives {
     position: absolute;
     z-index: 2;
@@ -920,7 +878,6 @@ footer a.zen-github:focus::before {
     background-color: rgba(255, 255, 255, 0.2);
   }
 
-  /* resources navigation */
   .zen-resources {
     position: absolute;
     top: 1310px;
@@ -955,7 +912,6 @@ footer a.zen-github:focus::before {
 
 
 
-/** Icon Fonts **/
 @font-face {
   font-family: "verdemoderna";
   src: url("verdemoderna.eot");
