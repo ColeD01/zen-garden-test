@@ -42,7 +42,6 @@ header {
 
   background: #2d6360 50% 0 url(huntington.jpg) no-repeat; 
 
-  background-attachment: fixed, fixed, fixed, scroll;
   background-image: url(contours.png), url(noise.png), url(gridlines.png),
     url(huntington.jpg);
   background-position: 0 0, 0 0, -5px -25px, 0 50%;
@@ -181,7 +180,6 @@ p {
 
 div.participation,
 div.benefits {
-  background-attachment: scroll, scroll, fixed;
   background-color: rgba(138, 188, 159, 0.5);
   background-image: url(contours-opaque.png), url(gridlines-opaque.png),
     url(bamboo.png);
@@ -422,9 +420,8 @@ li.viewall a {
   padding: 1em 12%;
   margin: 0;
   color: rgba(255, 255, 255, 0.4);
-  background: #3e5d67;
+  background: #325050;
 
-  background-attachment: fixed, fixed, fixed, scroll;
   background-image: url(contours.png), url(gridlines.png), url(noise.png),
     url(koi.jpg);
   background-position: 0 0, -5px -25px, 0 0, 0 50%;
@@ -609,7 +606,7 @@ footer a.zen-github:focus::before {
 
 @media only screen and (max-width: 1132px) {
   header {
-    border-top: solid 10px rgba(19, 67, 71, 0.9);
+    border-top: solid 10px #325050;
   }
   p,
   li {
