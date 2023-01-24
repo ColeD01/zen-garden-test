@@ -626,25 +626,6 @@ footer a.zen-github:focus::before {
   }
 }
 
-@media only screen and (min-width: 500px) and (max-width: 1150px) {
-  .requirements p:last-child {
-    padding-bottom: 2em;
-    padding-top: 2em;
-  }
-
-  footer {
-    padding: 3em 0;
-  }
-  footer a {
-    width: 52px;
-    height: 52px;
-    padding: 52px 0 0 0;
-    margin: 0 2em;
-  }
-  footer a::before {
-    font-size: 45px;
-  }
-}
 
 @media only screen and (min-width: 1132px) {
   body {
